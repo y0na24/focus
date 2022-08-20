@@ -1,0 +1,138 @@
+.email__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 157px;
+  margin-bottom: 119px;
+
+  .email__title {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #3D4F9F;
+    padding-bottom: 18px;
+  }
+
+  .email__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #8D96BD;
+    max-width: 330px;
+  }
+}
+
+.email__buttons {
+  .email__input {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7A85AD;
+    background: #EFEFF7;
+    border-radius: 5px;
+    padding: 21px 168px 21px 23px;
+  }
+
+  .email__submit {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background: #4D6CE1;
+    border-radius: 5px;
+    padding: 22px 62px 20px 62px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.3s;
+    }
+
+
+
+
+  }
+
+}
+
+
+
+.email__line {
+  width: 100%;
+  border-bottom: 1px solid #D8E3FE;
+}
+
+// ================================================
+@media(max-width:1285px) {
+  .email__inner .email__title {
+    font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1285 - 320)));
+    padding-bottom: calc(10px + (18 - 10) * ((100vw - 320px) / (1285 - 320)));
+  }
+
+  .email__inner .email__text {
+    font-size: calc(9px + (14 - 9) * ((100vw - 320px) / (1285 - 320)));
+    line-height: calc(22px + (27 - 22) * ((100vw - 320px) / (1285 - 320)));
+    max-width: calc(220px + (330 - 220) * ((100vw - 320px) / (1285 - 320)));
+  }
+
+  .email__buttons .email__input {
+    font-size: calc(10px + (13 - 10) * ((100vw - 320px) / (1285 - 320)));
+  }
+
+  .email__buttons .email__submit {
+    font-size: calc(10px + (13 - 10) * ((100vw - 320px) / (1285 - 320)));
+  }
+}
+
+@media(max-width:950px) {
+  .email__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .email__head {
+    margin-bottom: 25px;
+  }
+
+  .email__inner {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .email__buttons .email__input {
+
+    padding: 17px 95px 17px 23px;
+  }
+
+  .email__buttons .email__submit {
+    padding: 20px 44px 20px 44px;
+  }
+
+
+
+}
+
+@media(max-width:450px) {
+  .email__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .email__buttons .email__input {
+    text-align: center;
+    padding: 20px 44px 20px 44px;
+  }
+}

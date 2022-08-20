@@ -1,0 +1,68 @@
+@import 'fonts';
+@import 'header';
+@import 'hero';
+@import 'brands';
+@import 'plan';
+@import 'about';
+@import 'stats';
+@import 'blog';
+@import 'quotes';
+@import 'questions';
+@import 'life';
+@import 'email';
+@import 'footer';
+
+html {
+  scroll-behavior: smooth;
+}
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1238px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+  /* делает контент по центру */
+
+.small__container {
+  max-width: 943px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.button {
+  width: 113px;
+  height: 43px;
+  background: #D2E1FF;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  color: #3A79FF;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.37);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s;
+}
+.overlay--show {
+  opacity: 1;
+  visibility: visible;
+}

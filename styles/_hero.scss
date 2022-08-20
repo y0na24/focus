@@ -1,0 +1,125 @@
+.main__hero{
+  background: url('../img/2.hero-section/hero.svg')center no-repeat;
+}
+
+.hero__slider-inner {
+  padding-top: 92px;
+  
+
+
+  .hero__slider-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+
+    h2 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #3D4F9F;
+    }
+
+    h1 {
+      font-family: 'Quicksand';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 60px;
+      color: #3D4F9F;
+      text-align: center;
+      margin-top: 16px;
+
+      span {
+        font-weight: 500;
+
+      }
+    }
+
+    p {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 29px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: #8D96BD;
+      max-width: 501px;
+      margin-top: 28px;
+    }
+
+    .hero__video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 52px;
+      height: 52px;
+      background-color: #F2F6FF;
+      border-radius: 50%;
+      margin-top: 20px;
+      transition: all 0.3s;
+      &:hover{
+        background-color: #3D4F9F;
+        transition: all 0.3s;
+      }
+      &:hover svg path{
+        fill: #fff;
+        transition: all 0.3s;
+      }
+      
+    }
+  }
+
+  
+  .slick-dots {
+    bottom: -176px;
+
+  }
+  .slick-dots li {
+    margin: 0;
+
+  }
+  .slick-dots li button:before {
+    font-size: 9px;
+  }
+    
+    
+  li.slick-active button:before {
+    color: blue;
+  }
+}
+.main__hero{
+  height: 570px;
+}
+// ================================================
+@media(max-width:943px){
+  .hero__slider-inner .hero__slider-item h1{
+    font-size: calc(21px + (48 - 21) * ((100vw - 320px) / (943 - 320)));
+    line-height:calc(18px + (60 - 18) * ((100vw - 320px) / (943 - 320)));
+    margin-top: calc(8px + (16 - 8) * ((100vw - 320px) / (943 - 320)));
+  }
+  .hero__slider-inner .hero__slider-item p{
+    font-size: calc(10px + (15 - 10) * ((100vw - 320px) / (943 - 320)));
+    line-height:calc(15px + (29 - 15) * ((100vw - 320px) / (943 - 320)));
+    margin-top: calc(12px + (28 - 12) * ((100vw - 320px) / (943 - 320)));
+  }
+  .hero__slider-inner .hero__slider-item h2{
+    font-size: calc(8px + (10 - 8) * ((100vw - 320px) / (943 - 320)));
+  }
+  .hero__slider-inner .slick-dots li button:before {
+    font-size: calc(6px + (9 - 6) * ((100vw - 320px) / (943 - 320)));
+} 
+.hero__slider-inner .slick-dots {
+  bottom: calc(-60px + ((-176) - (-60)) * ((100vw - 320px) / (943 - 320)));
+}
+
+}
+
+
+
