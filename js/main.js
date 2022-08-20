@@ -68,9 +68,10 @@ $(function(){
     $('.overlay').toggleClass('overlay--show')
     $('.burger').toggleClass('burger--open')
   })
+  
   $('.header__list-item, .button').on('click', function (e){
     $('.header__top').toggleClass('header__top--open')
-    $('.overlay').toggleClass('overlay--show')
+    $('.overlay').removeClass('overlay--show')
     $('.burger').toggleClass('burger--open')
   })
 })
